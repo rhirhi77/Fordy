@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+}
+.heart{
+  height: 70px;
+  width: 70px;
+  background: #f20044;
+  position: relative;
+  transform: rotate(45deg);
+  box-shadow: -10px 10px 90px  deeppink;
+  animation: heart 0.8s linear infinite;
+}
+.Tap{
+  position: fixed;
+  margin-bottom: 20px;
+  text-align: center;
+}
+button {
+  background-color: #f20044;
+  color: antiquewhite;
+  font-size: 10px;
+  padding: 3px 5px;
+  margin: 7px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 20px;
+}
+@keyframes heart{
+  0%{transform: rotate(45deg) scale(1.10);}
+  80%{transform: rotate(45deg) scale(1.0);}
+  100%{transform: rotate(45deg) scale(0.8);}
+}
+.heart::before{
+  content: "";
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  background: #f20044;
+  right: 50%;
+  border-radius: 50px;
+  box-shadow: -10px 10px 90px  #f20044;
+}
+.heart::after{
+  content: "";
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  background: #f20044;
+  top: -50%;
+  border-radius: 50px;
+  box-shadow: -10px 10px 90px  #f20044;
+}

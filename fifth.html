@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+<div class="valentines-day-card">
+  <input id="open" type="checkbox">
+  <label class="open" for="open"></label>
+<div class="card-front">
+  <div class="note">Andrew Ford Lara Lee</div>
+</div>
+  
+  <div class="card-inside">
+    <div class="text-one">Happy<abbr title=""></abbr>
+    <h1>Dear Fordy,</h1>
+    <p>Let me start off this letter by saying how grateful I am to you. Thank you for spending time and sharing the happiness with me. I thought I'd never be able to smile genuinely again, until I met you. I treasure the moments we talk with each other, play together, and share fun videos and music recommendations with one another. For a short period of time, you instantly became a part of my life. And I never regret meeting you, not even a tiny bit. I am not sure how long this would last but I'm certain at how genuinely happy I am with you. Thank you, my bae!</p>
+    <p2>You are kinda weird, and I like it.  I like everything about you. And I hope I get the chance to get to know you more, to know you deeply. Don't be afraid to show Rhirhi your genuine self, Popord. You are safe with me.</p2>
+    <p3>My feelings for you is constantly growing each day.</br> And don't worry, you are not obliged to do </br> something about it. I do not ask anything for return. </br> Just be yourself and let me adore you. </p3>
+    <p4>You are beautiful in your own way, Fordy.</p4>
+    <p5>:3</p5>
+    
+    </div>
+    <div class="heart"></div>
+    <div class="smile"></div>
+    <div class="eyes"></div>
+</div>
+</div>
+
+<body>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+    body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2acac;
+  font-family: 'Mochiy Pop P One', sans-serif;
+}
+input#open {
+  display: none;
+}
+h1 {
+  font-family: 'Arial';
+  font-size: 10px;
+  position: absolute;
+  top: 66px;
+  left: 6px;
+}
+p {
+  font-family: 'Arial';
+  font-size: 8px;
+  text-align: left;
+  position: absolute;
+  top: 80px;
+  left: 6px;
+}
+p2{
+  font-family: 'Arial';
+  font-size: 8px;
+  text-align: left;
+  position: absolute;
+  top: 165px;
+  left: 6px;
+}
+p3{
+  font-family: 'Arial';
+  font-size: 7px;
+  text-align: left;
+  position: absolute;
+  top: 205px;
+  left: 6px;
+}
+p4{
+  font-family: 'Arial';
+  font-size: 7px;
+  text-align: left;
+  position: absolute;
+  top: 255px;
+  left: 6px;
+}
+p5{
+  font-family: 'Arial';
+  font-size: 7px;
+  text-align: left;
+  position: absolute;
+  top: 270px;
+  left: 6px;
+}
+.valentines-day-card {
+  position: relative;
+  width: 300px;
+  height:300px;
+  transform-style: preserve-3d;
+	transform: perspective(2500px);
+  transition: .3s;
+}
+
+.card-front {
+  position: relative;
+  background-color: #fff0f3;
+  width: 300px;
+  height:300px;
+  transform-origin: left;
+  box-shadow: inset 100px 20px 100px rgba(0,0,0,.15), 30px 0 50px rgba(0,0,0,0.3);
+  transition: .3s;
+}
+
+.card-front:before {
+  content:"";
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  background-color: #d04e4e;
+  top: 10px;
+  left: 10px;
+}
+
+.card-inside {
+  position: absolute;
+  background-color: #fff0f3;
+  width: 300px;
+  height:300px;
+  z-index:-1;
+  left:0;
+  top:0;
+  box-shadow: inset 100px 20px 100px rgba(0,0,0,0.22), 100px 20px 100px rgba(0,0,0,0.1);
+}
+
+.open {
+  position: absolute;
+  width: 300px;
+  height:300px;
+  left:0;
+  top:0;
+  background-color: transparent;
+  z-index:6;
+  cursor: pointer;
+}
+
+#open:checked ~ .card-front {
+  transform: rotateY(-155deg);
+  box-shadow: inset 100px 20px 100px rgba(0,0,0,.13), 30px 0 50px rgba(0,0,0,0.1);
+}
+
+#open:checked ~ .card-front:before {
+  z-index:5;
+  background-color: #fff0f3;
+  width:300px;
+  height:300px;
+  top:0;
+  left:0;
+  box-shadow: inset 100px 20px 100px rgba(0,0,0,.1), 30px 0 50px rgba(0,0,0,0.1);
+}
+.note {
+  position: relative;
+  width: 200px;
+  height: 150px;
+  background-color: #fff0f3;
+  top:75px;
+  left:50px;
+  color: #333;
+  font-size:20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  filter: drop-shadow(0 0 20px rgba(0,0,0,0.3));
+}
+
+.note:before, .note:after {
+  position: absolute;
+  content:"";
+  background-color: #ba1c1c;
+  width: 40px;
+  height:40px;
+}
+
+.note:before {
+  transform: rotate(-45deg);
+  top:-20px;
+  left:80px;
+}
+
+.note:after {
+  border-radius:50%;
+  top:-35px;
+  left:65px;
+  box-shadow:30px 0 #ba1c1c;
+}
+.text-one {
+  position: absolute;
+  color: #333;
+  font-size: 15px;
+  top:10px;
+  width:300px;
+  text-align: center;
+}
+
+.text-one:before, .text-one:after {
+  position: absolute;
+  left:1px;
+  text-align: center;
+  width:300px;
+}
+
+.text-one:before {
+  content:"Valentine's";
+  top:22px;
+  color: #d04e4e;
+}
+
+.text-one:after {
+  content:"day!";
+  top:40px;
+}
+
+.heart {
+  position: relative;
+  background-color: #d04e4e;
+  height: 50px;
+  width:50px;
+  top:225px;
+  left:215px;
+  transform: rotate(-45deg);
+  animation: .8s beat infinite;
+}
+  
+.heart:before, .heart:after {
+  content:"";
+  background-color: #d04e4e;
+  border-radius:50%;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  }
+  
+.heart:before {
+  top:-25px;
+  left:0;
+}
+  
+.heart:after {
+  left:25px;
+  top:0;
+}
+
+.smile {
+  position: absolute;
+  width:30px;
+  height:15px;
+  background-color: #333;
+  z-index:1;
+  border-radius: 0 0 100px 100px;
+  top:240px;
+  left:225px;
+  overflow: hidden;
+}
+
+.smile:before {
+  content:"";
+  position: absolute;
+  border-radius:50%;
+  width:15px;
+  height:15px;
+  background-color: #030202;
+  top:5px;
+  left:5px;
+}
+
+.eyes {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #333;
+  width:10px;
+  height:10px;
+  z-index:1;
+  top:225px;
+  left:255px;
+  box-shadow: -40px 0 #333;
+  transform-origin: 50%;
+  animation: close 2s infinite;
+}
+
+@keyframes close {
+    0%, 100% {
+        transform: scale(1, .05);
+    }
+    5%, 95% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes beat {
+  0%, 40%, 100% {
+    transform: scale(1) rotate(-45deg);
+  }
+  25%, 60% {
+    transform: scale(1.1) rotate(-45deg);
+  }
+}
+  </style>
+</body>
+</body>
+</html>
